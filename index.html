@@ -8,10 +8,12 @@
       var ua = navigator.userAgent || navigator.vendor || window.opera;
 
       if (/android/i.test(ua)) {
-        window.location.href = "https://play.google.com/store/apps/details?id=com.merofe3601.OUTDO";
+        window.location.href =
+          "intent://details?id=com.angelbattery.app#Intent;scheme=market;package=com.android.vending;end;";
       }
       else if (/iPad|iPhone|iPod/.test(ua)) {
-        window.location.href = "https://apps.apple.com/in/app/angel-battery/id6746981292";
+        window.location.href =
+          "https://apps.apple.com/app/idYOUR_IOS_APP_ID";
       }
       else {
         window.location.href = "https://example.com";
@@ -20,6 +22,6 @@
   </script>
 </head>
 <body>
-  <p>Redirecting to the app store...</p>
+  <p>Redirecting…</p>
 </body>
 </html>
