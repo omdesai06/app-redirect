@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>App Redirect</title>
+  <script>
+    window.onload = function () {
+      var ua = navigator.userAgent || navigator.vendor || window.opera;
+
+      if (/android/i.test(ua)) {
+        window.location.href = "https://play.google.com/store/apps/details?id=com.merofe3601.OUTDO";
+      }
+      else if (/iPad|iPhone|iPod/.test(ua)) {
+        window.location.href = "https://apps.apple.com/in/app/angel-battery/id6746981292";
+      }
+      else {
+        window.location.href = "https://example.com";
+      }
+    };
+  </script>
+</head>
+<body>
+  <p>Redirecting to the app store...</p>
+</body>
+</html>
